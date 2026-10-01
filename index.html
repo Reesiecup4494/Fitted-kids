@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17112b">
+<title>Fitted Kids — Style. Culture. Confidence.</title>
+<style>
+:root{--bg:#100c1f;--panel:#1b1530;--panel2:#241b40;--pink:#ff4fa3;--yellow:#ffd84d;--purple:#8c5cff;--text:#fff;--muted:#c9c2dc}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#33205d 0,#100c1f 42%,#090711 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+.app{max-width:520px;margin:auto;padding:18px 14px 34px}.brand{text-align:center;padding:8px 0 14px}.brand h1{margin:0;font-size:34px;letter-spacing:-1.5px;font-weight:900}.brand h1 span{color:var(--pink)}.tag{font-size:12px;color:var(--muted);letter-spacing:1.6px;text-transform:uppercase;font-weight:700}
+.card{background:rgba(27,21,48,.92);border:1px solid rgba(255,255,255,.08);border-radius:24px;box-shadow:0 16px 50px rgba(0,0,0,.25);overflow:hidden}.topbar{display:flex;gap:8px;padding:12px}.charbtn,.tab,.item{border:0;color:#fff;background:#2b2149;border-radius:14px;padding:10px 12px;font-weight:800;cursor:pointer}.charbtn{flex:1}.charbtn.active{background:linear-gradient(135deg,var(--pink),var(--purple))}.avatar{min-height:335px;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(180deg,#3b245c,#19132f)}.floor{position:absolute;bottom:28px;width:70%;height:22px;border-radius:50%;background:rgba(0,0,0,.3);filter:blur(5px)}
+.person{position:relative;width:220px;height:285px}.head{position:absolute;left:64px;top:25px;width:92px;height:105px;background:#8b573d;border-radius:48% 48% 44% 44%;z-index:3;box-shadow:inset -7px -3px rgba(0,0,0,.08)}.girl .head{background:#8c563e}.hair{position:absolute;left:51px;top:7px;width:118px;height:72px;background:#17131c;border-radius:58% 58% 35% 35%;z-index:4}.girl .hair{height:82px;border-radius:45% 45% 35% 35%}.hair:after{content:"";position:absolute;inset:8px;border-radius:inherit;background:repeating-linear-gradient(90deg,transparent 0 12px,rgba(255,255,255,.07) 13px 15px)}.eyes{position:absolute;z-index:5;top:67px;left:84px;display:flex;gap:27px}.eyes i{width:7px;height:7px;background:#161016;border-radius:50%}.smile{position:absolute;z-index:5;top:96px;left:103px;width:16px;height:7px;border-bottom:3px solid #3a1e24;border-radius:50%}.body{position:absolute;left:47px;top:124px;width:126px;height:105px;border-radius:28px 28px 14px 14px;background:#ff4fa3;z-index:2}.girl .body{background:#8c5cff}.bottom{position:absolute;left:55px;top:216px;width:110px;height:48px;background:#202033;border-radius:12px 12px 20px 20px;z-index:2}.leg1,.leg2{position:absolute;top:254px;width:34px;height:25px;background:#70452f;border-radius:12px;z-index:1}.leg1{left:70px}.leg2{left:117px}.shoes{position:absolute;top:270px;left:55px;width:120px;height:22px;z-index:3}.shoes:before,.shoes:after{content:"";position:absolute;width:49px;height:18px;background:#f7f7ff;border-radius:12px 15px 8px 8px;box-shadow:inset 0 -4px #b8b5c9}.shoes:before{left:4px}.shoes:after{right:4px}.acc{position:absolute;z-index:6;top:145px;right:35px;font-size:26px}.label{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:12px;color:#ddd5ef;font-weight:700}
+.tabs{display:flex;gap:7px;overflow:auto;padding:12px 12px 5px}.tab{white-space:nowrap;background:#21193a;color:#bdb3d4}.tab.active{background:#fff;color:#191226}.items{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;padding:10px 12px 14px}.item{min-height:72px;background:#251c43;border:1px solid transparent}.item.active{border-color:var(--yellow);background:#312453}.item .emoji{font-size:25px;display:block;margin-bottom:4px}.item small{font-size:10px;color:#d8d0e7}.save{margin:0 12px 14px;width:calc(100% - 24px);padding:14px;border:0;border-radius:15px;background:linear-gradient(90deg,var(--yellow),#ffb83d);font-weight:950;color:#21172b;font-size:16px;cursor:pointer}.challenge{margin-top:14px;padding:16px}.challenge h2{margin:0 0 5px;font-size:18px}.challenge p{margin:0 0 12px;color:var(--muted);font-size:13px}.challenge button,.shop button{border:0;border-radius:13px;padding:11px 14px;background:var(--pink);color:#fff;font-weight:900;cursor:pointer}.shop{margin-top:14px;padding:16px}.shop h2{margin:0 0 6px}.pack{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-top:1px solid rgba(255,255,255,.08)}.pack:first-of-type{border-top:0}.price{color:var(--yellow);font-weight:900}.note{font-size:11px;color:#9e95b4;line-height:1.45;margin-top:10px}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%) translateY(120px);background:#fff;color:#20162f;padding:12px 18px;border-radius:99px;font-weight:850;transition:.25s;z-index:50;box-shadow:0 10px 30px #0006}.toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="brand"><h1>FITTED <span>KIDS</span></h1><div class="tag">Style. Culture. Confidence.</div></div>
+  <section class="card">
+    <div class="topbar"><button class="charbtn active" data-char="girl">👧🏾 Girl</button><button class="charbtn" data-char="boy">👦🏾 Boy</button></div>
+    <div class="avatar"><div class="floor"></div><div id="person" class="person girl"><div class="head"></div><div class="hair"></div><div class="eyes"><i></i><i></i></div><div class="smile"></div><div class="body"></div><div class="bottom"></div><div class="leg1"></div><div class="leg2"></div><div class="shoes"></div><div class="acc">✨</div></div><div class="label" id="lookLabel">Fresh Fit</div></div>
+    <div class="tabs" id="tabs"></div>
+    <div class="items" id="items"></div>
+    <button class="save" id="save">💾 Save My Fit</button>
+  </section>
+
+  <section class="card challenge">
+    <h2>🔥 Today’s Style Challenge</h2>
+    <p id="challengeText">First Day Fresh — build a look that says “ready for school.”</p>
+    <button id="challengeBtn">I’m Ready</button>
+  </section>
+
+  <section class="card shop">
+    <h2>🛍️ Style Shop</h2>
+    <p class="note">Demo packs are shown here for testing. Real payments can be connected later in the App Store version.</p>
+    <div class="pack"><div><b>Starter Fashion Pack</b><br><span class="price">$4.99</span></div><button onclick="toast('Shop coming soon!')">Preview</button></div>
+    <div class="pack"><div><b>Sneaker Drop</b><br><span class="price">$3.99</span></div><button onclick="toast('Shop coming soon!')">Preview</button></div>
+    <div class="pack"><div><b>Hair Pack</b><br><span class="price">$2.99</span></div><button onclick="toast('Shop coming soon!')">Preview</button></div>
+  </section>
+  <div class="note" style="text-align:center;padding:16px 8px">Fitted Kids is a prototype. No chat, messaging, or real-money purchases are enabled in this demo.</div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const data={
+  hair:[['✨ Puff Buns','🎀'],['💫 Box Braids','🧶'],['🌟 Locs','🖤'],['🌀 Curly Afro','🌀'],['⚡ Twists','⚡'],['🔥 High-Top Fade','🔥']],
+  tops:[['Pink Hoodie','🩷'],['Graphic Tee','👕'],['Varsity Jacket','🏀'],['Cropped Crewneck','💜'],['Denim Jacket','🧥'],['Track Top','⚡']],
+  bottoms:[['Cargo Pants','👖'],['Wide-Leg Jeans','👖'],['Joggers','🩶'],['Pleated Skirt','💜'],['Shorts','🩳'],['Denim Skirt','🩵']],
+  shoes:[['Fresh Sneakers','👟'],['High-Tops','👟'],['Court Kicks','🏀'],['Classic Trainers','✨'],['Chunky Kicks','🔥'],['Slip-Ons','⭐']],
+  accessories:[['Chain','⛓️'],['Hoops','💎'],['Cap','🧢'],['Sunglasses','🕶️'],['Backpack','🎒'],['Bracelet','📿']]
+};
+const challenges=[
+ ['First Day Fresh','Build a look that says “ready for school.”'],
+ ['Basketball Game','Bring your best courtside style.'],
+ ['Birthday Party','Make a fun birthday fit.'],
+ ['Family Reunion','Show up looking fly for the family.'],
+ ['Chill Day','Create the ultimate comfy look.'],
+ ['Summer Vibes','Build a bright summer outfit.']
+];
+let state=JSON.parse(localStorage.getItem('fittedKids')||'null')||{char:'girl',cat:'hair',selected:{},saved:[]};
+const tabs=document.getElementById('tabs'), items=document.getElementById('items'), person=document.getElementById('person'), label=document.getElementById('lookLabel');
+const catNames={hair:'Hair',tops:'Tops',bottoms:'Bottoms',shoes:'Shoes',accessories:'Accessories'};
+function renderTabs(){tabs.innerHTML='';Object.keys(data).forEach(cat=>{let b=document.createElement('button');b.className='tab '+(state.cat===cat?'active':'');b.textContent=catNames[cat];b.onclick=()=>{state.cat=cat;render()};tabs.appendChild(b)})}
+function renderItems(){items.innerHTML='';data[state.cat].forEach((x,i)=>{let b=document.createElement('button');b.className='item '+(state.selected[state.cat]===i?'active':'');b.innerHTML=`<span class="emoji">${x[1]}</span><small>${x[0]}</small>`;b.onclick=()=>{state.selected[state.cat]=i;render();};items.appendChild(b)})}
+function updateAvatar(){person.className='person '+state.char;let s=state.selected;let hair=data.hair[s.hair??0][0], top=data.tops[s.tops??0][0], bottom=data.bottoms[s.bottoms??0][0], shoe=data.shoes[s.shoes??0][0];label.textContent=`${hair.replace(/[^\w ]/g,'').trim()} • ${top} • ${bottom} • ${shoe}`}
+function render(){renderTabs();renderItems();updateAvatar();document.querySelectorAll('.charbtn').forEach(b=>b.classList.toggle('active',b.dataset.char===state.char));localStorage.setItem('fittedKids',JSON.stringify(state))}
+document.querySelectorAll('.charbtn').forEach(b=>b.onclick=()=>{state.char=b.dataset.char;render()});
+document.getElementById('save').onclick=()=>{state.saved.push({...state.selected,char:state.char});state.saved=state.saved.slice(-10);localStorage.setItem('fittedKids',JSON.stringify(state));toast('Your fit was saved! 💖')};
+document.getElementById('challengeBtn').onclick=()=>{let c=challenges[Math.floor(Math.random()*challenges.length)];document.getElementById('challengeText').textContent=c[0]+' — '+c[1];toast('Challenge accepted! 🔥')};
+function toast(msg){let t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
+render();
+</script>
+</body>
+</html>
